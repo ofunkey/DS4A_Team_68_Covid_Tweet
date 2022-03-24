@@ -1,0 +1,16 @@
+streamlit==1.5.1
+pandas==1.0.3
+numpy==1.18.4
+matplotlib==3.2.1
+seaborn==0.11.2
+plotly==5.6.0
+nltk==3.7
+vaderSentiment==3.3.2
+scikit-learn==1.0.2
+textblob==0.17.1
+wordcloud==1.6.0.post86+ge7c608a
+#####
+#sqlite3==3.37.2
+#re == 
+#regex== 2022.1.18
+#
