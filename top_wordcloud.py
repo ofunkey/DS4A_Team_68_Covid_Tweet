@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
 from wordcloud import (WordCloud, get_single_color_func)
 #from PIL import Image
-#from wordcloud import WordCloud
 #import seaborn as sns
 #import random
 import streamlit as st
@@ -25,21 +24,21 @@ import re                                   # library for regular expression ope
 #import string                               # for string operations
 # module for stop words that come with NLTK
 from nltk.corpus import stopwords, wordnet
-from nltk.stem import PorterStemmer         # module for stemming
+#from nltk.stem import PorterStemmer         # module for stemming
 from nltk.stem import WordNetLemmatizer     # module for stemming
-from nltk.tokenize import TweetTokenizer    # module for tokenizing strings
-from nltk.tokenize import sent_tokenize
-from nltk.tokenize import word_tokenize
+#from nltk.tokenize import TweetTokenizer    # module for tokenizing strings
+#from nltk.tokenize import sent_tokenize
+#from nltk.tokenize import word_tokenize
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-from textblob import TextBlob
-from textblob import Word
+#from textblob import TextBlob
+#from textblob import Word
 
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+#nltk.download('stopwords')
+#nltk.download('wordnet')
+#nltk.download('punkt')
+#nltk.download('averaged_perceptron_tagger')
 
 
 # Word Cloud
