@@ -7,6 +7,7 @@ backgroundColor="#002b36"\n\
 secondaryBackgroundColor="#586e75"\n\
 textColor="#fafafa"\n\
 font="serif"\n\
+\n\
 "
 
 echo "\
