@@ -35,7 +35,6 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 from textblob import TextBlob
 from textblob import Word
-nltk.download()
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
