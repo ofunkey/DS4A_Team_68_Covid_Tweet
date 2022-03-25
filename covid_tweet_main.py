@@ -31,7 +31,7 @@ footer:before{
 """
 
 
-pages = {'About':home_page, 'DataFrame':dataframe, 'Sentiment':sentiment, 'WordCloud':top_wordcloud.py, 'Heatmap':heatmap, 'Prediction':prediction}
+pages = {'About':home_page, 'DataFrame':dataframe, 'Sentiment':sentiment, 'WordCloud':top_wordcloud, 'Heatmap':heatmap, 'Prediction':prediction}
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
