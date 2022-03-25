@@ -4,7 +4,7 @@
 #https://amueller.github.io/word_cloud/auto_examples/colored_by_group.html
 
 import prediction
-import mywordcloud
+import top_wordcloud
 import heatmap
 import dataframe
 import sentiment
@@ -31,7 +31,7 @@ footer:before{
 """
 
 
-pages = {'About':home_page, 'DataFrame':dataframe, 'Sentiment':sentiment, 'WordCloud':mywordcloud, 'Heatmap':heatmap, 'Prediction':prediction}
+pages = {'About':home_page, 'DataFrame':dataframe, 'Sentiment':sentiment, 'WordCloud':top_wordcloud.py, 'Heatmap':heatmap, 'Prediction':prediction}
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
