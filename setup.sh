@@ -5,9 +5,7 @@ headless = true\n\
 port = $PORT\n\
 enableCORS = false\n\
 \n\
-";
-
-sleep 2;
+"
 
 echo "\
 [theme]\n\
