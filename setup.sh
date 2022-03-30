@@ -5,7 +5,8 @@ headless = true\n\
 port = $PORT\n\
 enableCORS = false\n\
 \n\
-"
+" 
+> ~/.streamlit/config.toml
 
 echo "\
 [theme]\n\
@@ -15,5 +16,4 @@ secondaryBackgroundColor = \"#586e75\"\n\
 textColor = \"#fafafa\"\n\
 font = \"serif\"\n\
 \n\
-
 " > ~/.streamlit/config.toml
