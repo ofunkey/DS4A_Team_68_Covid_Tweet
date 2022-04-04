@@ -1,7 +1,7 @@
 # DS4A_Team_68_Covid_Tweet
 
 
-[Check it out on Heroku](https://covid-tweets-exploration.herokuapp.com/)
+[Web Application on Heroku](https://covid-tweets-exploration.herokuapp.com/)
 
 
 [Deployed on Streamlit](https://share.streamlit.io/ofunkey/ds4a_team_68_covid_tweet/main/covid_tweet_main.py)
@@ -32,7 +32,6 @@ NLP Text Pre-processing : Applied lowercase, removed punctuations, URLs, & stop 
 ### Web Application
 
 #### Data Frame
-
 The entire data frame is displayed by default
 * User can adjust how many rows to show 
 * Filter options: Variant (Beta, Delta, & Omicron) user-selected columns, specific date range, 
@@ -40,14 +39,23 @@ The entire data frame is displayed by default
 * Correlation map between numerical columns
 * Scatterplots based on user-selected columns 
 
+![dataframe](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/)
+
 #### Heat Map
 * Sentiment scores of all text, aggregated into one value (mean), across hour (x-axis) & variant (y-axis)
 * Radio button 'no' allows the user to input a text for filtering and display the heat map on the subset of sentiment scores 
+
+![heatmap1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/heatmap1.PNG)
+![heatmap2](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/heatmap2.PNG)
 
 #### Sentiment
 * A bar-plot highlighting sentiment across each variant (Beta, Delta, & Omicron
 * Trend - More shares of positive sentiment for the Beta & Delta variants
 * Time series aggregated by selected time intervals & selection of variant 
+
+![sentiment1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/sentiment1.PNG)
+![sentiment2](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/sentiment2.PNG)
+![sentiment3](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/sentiment3.PNG)
 
 #### Prediction
 * Used VaderSentiment module to extract sentiment scores
@@ -56,12 +64,18 @@ The entire data frame is displayed by default
 * Score ranges from -1 to 1 with the following ranges:
 
        - Neutral (-0.5, 0.5), Positive (0.5, 1), & Negative (-1, -0.5)
+     
+ ![prediction](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/)
 
-#### WordCloud
+#### Word Cloud
 * The more frequent the word was used, the larger the size of the word display
 * Each text has a sentiment score highlighted by color:
 
   - Red for negative
   - Green for positive
   - Gray for neutral
+
 * Slider allows user to define the number of words to display
+
+![wordcloud1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/wordcloud1.PNG)
+![wordcloud2](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/wordcloud2.PNG)
