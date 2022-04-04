@@ -19,8 +19,15 @@ By analyzing user posts across Twitter, we hope to uncover a trend within indivi
 
 ### Background
 In this project, we explored and analysed Covid-19 posts within the first 10-day window of each variant to find interesting discoveries in the tweets during the pandemic.
-Data analysis was performed on the numerical features related to Twitter account users' and their posts. The module VaderSentiment, was utilized in performing Natural Language Processing (NLP) Sentiment analysis. Once patterns and trends were uncovered, a web application was created highlighting the findings  through the following: 
-The Dataframe, Sentiment, Heat Map, Word Cloud, and Prediction. A user-friendly application was created by using an open source package called Streamlit.
+Data analysis was performed on the numerical features related to Twitter account users' and their posts. The module VaderSentiment, was utilized in performing Natural Language Processing (NLP) Sentiment analysis. Once patterns and trends were uncovered, a web application was created highlighting the findings  through the following:
+
+- The Dataframe
+- Sentiment
+- Heat Map
+- Word Cloud
+- Prediction
+
+A user-friendly application was created by using an open source package called Streamlit.
 
 ### Data Collection and Pre-Processing
 Source - Covid-19 Twitter Chatter dataset from Zenodo and Tweeter API 
