@@ -29,7 +29,7 @@ Collection -Utilized Twarc2 package to transform list of tweet_ids to full tweet
 Tabular Pre-processing : Extracted each hour, renamed columns, created variant name by date, & parse data types
 NLP Text Pre-processing : Applied lowercase, removed punctuations, URLs, & stop words, tokenized and lemmatized tweet text
 
-### Web Application
+### [Web Application on Heroku](https://covid-tweets-exploration.herokuapp.com/)
 
 #### Data Frame
 The entire data frame is displayed by default
@@ -39,13 +39,20 @@ The entire data frame is displayed by default
 * Correlation map between numerical columns
 * Scatterplots based on user-selected columns 
 
-![dataframe](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/)
+##### Correlation map of numerical columns
+Observed positive correlation between like_count and reply_count, like_count and retweet_count 
+![correlation_map](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/correlation_heatmap.PNG)
+
+##### Scatterplot of like_counts vs re_tweets_counts
+![scatterplot](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/scatterplot.PNG)
 
 #### Heat Map
 * Sentiment scores of all text, aggregated into one value (mean), across hour (x-axis) & variant (y-axis)
 * Radio button 'no' allows the user to input a text for filtering and display the heat map on the subset of sentiment scores 
 
 ![heatmap1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/heatmap1.PNG)
+
+* Radio button 'no' allows the user to input a text for filtering and display the heat map on the subset of sentiment scores 
 ![heatmap2](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/heatmap2.PNG)
 
 #### Sentiment
@@ -65,7 +72,7 @@ The entire data frame is displayed by default
 
        - Neutral (-0.5, 0.5), Positive (0.5, 1), & Negative (-1, -0.5)
      
- ![prediction](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/)
+ ![prediction](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/prediction.PNG)
 
 #### Word Cloud
 * The more frequent the word was used, the larger the size of the word display
@@ -74,8 +81,12 @@ The entire data frame is displayed by default
   - Red for negative
   - Green for positive
   - Gray for neutral
-
 * Slider allows user to define the number of words to display
 
+##### Word Cloud with 75 top words
+Words like Vaccine, vaccinate, health life are averagely positive sentiments. Whereas words like death, risk report, right words are averagely negative sentiments and covid case, new covid, pandemic, covid are averagely neutral sentiments
+
 ![wordcloud1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/wordcloud1.PNG)
+
+##### Word Cloud with 30 top words
 ![wordcloud2](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/wordcloud2.PNG)
