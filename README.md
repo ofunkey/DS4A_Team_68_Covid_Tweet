@@ -4,8 +4,6 @@
 [Web Application on Heroku](https://covid-tweets-exploration.herokuapp.com/)
 
 
-[Deployed on Streamlit](https://share.streamlit.io/ofunkey/ds4a_team_68_covid_tweet/main/covid_tweet_main.py)
-
 ## An Analysis of Twitter Comments During Covid-19
 
 ![covid](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/covid19-image.png)
