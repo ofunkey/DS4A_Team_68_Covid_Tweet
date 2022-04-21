@@ -28,7 +28,7 @@ Data analysis was performed on the numerical features related to Twitter account
 A user-friendly application was created by using an open source package called Streamlit.
 
 ### Data Collection and Pre-Processing
-Source - Covid-19 Twitter Chatter dataset from Zenodo and Tweeter API 
+Source - Covid-19 Twitter Chatter dataset from [Zenodo](https://zenodo.org/record/5775023#.YcJfP2jMIrB) and Tweeter API 
 Collection -Utilized Twarc2 package to transform list of tweet_ids to full tweets by hydration and selected posts within a 10-day window of each variant (Beta, Delta, & Omicron) 
 
 Tabular Pre-processing : Extracted each hour, renamed columns, created variant name by date, & parse data types
