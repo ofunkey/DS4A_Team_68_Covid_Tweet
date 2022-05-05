@@ -89,7 +89,7 @@ Observed positive correlation between like_count and reply_count, like_count and
 * Slider allows user to define the number of words to display
 
 ##### Word Cloud with 75 top words
-Words like Vaccine, vaccinate, health life are averagely positive sentiments. Whereas words like death, risk report, right words are averagely negative sentiments and covid case, new covid, pandemic, covid are averagely neutral sentiments
+Words like vaccine, health, life are averagely positive sentiments, whereas words like death, risk, report words are averagely negative sentiments and covid case, new covid, pandemic, covid are averagely neutral sentiments.
 
 ![wordcloud1](https://github.com/ofunkey/DS4A_Team_68_Covid_Tweet/blob/main/images/wordcloud1.PNG)
 
