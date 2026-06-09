@@ -84,7 +84,7 @@ def app():
     
     plt.xlabel("Variant")
     plt.ylabel(dict_norm[select_normalize][1] + " of each Category")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    #st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
     
         
