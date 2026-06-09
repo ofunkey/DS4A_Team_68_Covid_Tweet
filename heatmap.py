@@ -128,7 +128,7 @@ def app():
     #wf = FreqDist(words)
     
     # X_df = pd.DataFrame(X_text, index=vect.get_feature_names_out(), columns=['number'])
-    X_df = pd.DataFrame(X_text, index=words, columns=['number'])
+    X_df = pd.DataFrame(word_counts, index=words, columns=['number'])
     X_df = X_df.sort_values(by=['number'], ascending=False)
     top_words = list(X_df.index[:500])
     
