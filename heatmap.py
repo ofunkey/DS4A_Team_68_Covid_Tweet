@@ -1,3 +1,9 @@
+import nltk
+nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('punkt', quiet=True)
+
+
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt 
