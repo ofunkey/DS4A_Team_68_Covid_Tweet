@@ -92,26 +92,43 @@ def app():
     #subset of texts
     #words = nltk.word_tokenize(''.join([tweet for tweet in tweets['cleaned_text']]))
     
-    vect = CountVectorizer(ngram_range=(1, 3))
-    vect.fit(tweets['cleaned_text'])
+    # vect = CountVectorizer(ngram_range=(1, 3))
+    # vect.fit(tweets['cleaned_text'])
     
-    # Transform the review column
-    X_text = vect.transform(tweets['cleaned_text'])
+    # # Transform the review column
+    # X_text = vect.transform(tweets['cleaned_text'])
+
+    # X_text = X_text.sum(axis=0)
+    # #X_text = X_text.toarray().sum(axis=0)
+    # #cols = vect.get_feature_names_out()
+
+
+
+    # Limit vocab size
+    vectorizer = CountVectorizer(max_features=10000)
+    X_text = vectorizer.fit_transform(tweets['cleaned_text'])
+
+    # Sum without converting to dense
+    word_counts = np.asarray(X_text.sum(axis=0)).flatten()
+    words = vectorizer.get_feature_names_out()
+
+
     
-    X_text = X_text.sum(axis=0)
-    #X_text = X_text.toarray().sum(axis=0)
-    #cols = vect.get_feature_names_out()
+    
+
     
     ####################
     words1 = []
-    tagged = nltk.pos_tag(vect.get_feature_names_out())
+    # tagged = nltk.pos_tag(vect.get_feature_names_out())
+    tagged = nltk.pos_tag(words)
     for (word, tag) in tagged:
         if tag == 'NNP': # If the word is a proper noun
             words1.append(word)
     
     #wf = FreqDist(words)
     
-    X_df = pd.DataFrame(X_text, index=vect.get_feature_names_out(), columns=['number'])
+    # X_df = pd.DataFrame(X_text, index=vect.get_feature_names_out(), columns=['number'])
+    X_df = pd.DataFrame(X_text, index=words, columns=['number'])
     X_df = X_df.sort_values(by=['number'], ascending=False)
     top_words = list(X_df.index[:500])
     
