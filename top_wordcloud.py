@@ -169,7 +169,7 @@ def app():
         # Getting the tokenization and occurrence counting
         words_trans = vectorizer.fit_transform(documents)
 
-        words = vectorizer.get_feature_names()
+        words = vectorizer.get_feature_names_out()
 
         return words_trans, words
 
