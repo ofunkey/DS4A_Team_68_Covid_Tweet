@@ -174,7 +174,10 @@ def app():
     temp_tweets['hour'] = temp_tweets['hour'].astype('int8')
     
     heat_df = temp_tweets.groupby(['hour', 'variant'])['sentiment_score'].mean().reset_index()
-    heat_pivot = heat_df.pivot('variant', 'hour', 'sentiment_score')
+    #heat_pivot = heat_df.pivot('variant', 'hour', 'sentiment_score')
+
+    # New - explicit keyword arguments
+    heat_pivot = heat_df.pivot(index='variant', columns='hour', values='sentiment_score')
     
     plt.figure(figsize=(20, 10))
     sns.heatmap(heat_pivot, cmap="icefire", linewidths=.7, annot=True)
