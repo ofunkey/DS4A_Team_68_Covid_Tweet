@@ -287,7 +287,7 @@ def app():
         plt.imshow(wc, interpolation="bilinear")
         plt.axis("off")
         # plt.show()
-        st.set_option('deprecation.showPyplotGlobalUse', False)
+        #st.set_option('deprecation.showPyplotGlobalUse', False)
         st.pyplot()
 
 
