@@ -111,5 +111,5 @@ def app():
     plt.xlabel("Date")
     plt.ylim([-1,1])
     plt.tight_layout()
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    #st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
