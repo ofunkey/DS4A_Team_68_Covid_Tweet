@@ -98,7 +98,8 @@ def app():
     # Transform the review column
     X_text = vect.transform(tweets['cleaned_text'])
     
-    X_text = X_text.toarray().sum(axis=0)
+    X_text = X_text.sum(axis=0)
+    #X_text = X_text.toarray().sum(axis=0)
     #cols = vect.get_feature_names_out()
     
     ####################
