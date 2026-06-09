@@ -93,18 +93,18 @@ def app():
     X_text = vect.transform(tweets['cleaned_text'])
     
     X_text = X_text.toarray().sum(axis=0)
-    #cols = vect.get_feature_names()
+    #cols = vect.get_feature_names_out()
     
     ####################
     words1 = []
-    tagged = nltk.pos_tag(vect.get_feature_names())
+    tagged = nltk.pos_tag(vect.get_feature_names_out())
     for (word, tag) in tagged:
         if tag == 'NNP': # If the word is a proper noun
             words1.append(word)
     
     #wf = FreqDist(words)
     
-    X_df = pd.DataFrame(X_text, index=vect.get_feature_names(), columns=['number'])
+    X_df = pd.DataFrame(X_text, index=vect.get_feature_names_out(), columns=['number'])
     X_df = X_df.sort_values(by=['number'], ascending=False)
     top_words = list(X_df.index[:500])
     
