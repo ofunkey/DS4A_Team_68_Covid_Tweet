@@ -1,7 +1,7 @@
 # DS4A_Team_68_Covid_Tweet
 
 
-[Web Application on Heroku](https://covid-tweets-exploration.herokuapp.com/)
+[Web Application on Streamlit](https://covid-tweets-app.streamlit.app/)
 
 
 ## An Analysis of Twitter Comments During Covid-19
