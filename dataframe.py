@@ -126,7 +126,7 @@ def app():
       fig, ax = plt.subplots(figsize = (6,4))
       sns.heatmap(temp_tweets[['like_count', 'reply_count', 'retweet_count', 'followers_count',
         'following_count', 'tweet_count']].corr(), annot=True, ax=ax)
-      st.set_option('deprecation.showPyplotGlobalUse', False)
+      #st.set_option('deprecation.showPyplotGlobalUse', False)
       st.pyplot(fig)
 
   #user can choose 2 variables containing numerical datatypes, with the exception of source, to see a scatterplot
@@ -136,7 +136,7 @@ def app():
       selected_x = st.selectbox('X-Axis', tweets_numbers.columns)
       selected_y = st.selectbox('Y-Axis', tweets_numbers.columns)
       fig = px.scatter(tweets_numbers, x = tweets_numbers[selected_x], y = tweets_numbers[selected_y])
-      st.set_option('deprecation.showPyplotGlobalUse', False)
+      #st.set_option('deprecation.showPyplotGlobalUse', False)
       st.plotly_chart(fig)
 
 
