@@ -158,7 +158,7 @@ def app():
     plt.show()
     
     
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    #st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
     
     #"YlGnBu"
