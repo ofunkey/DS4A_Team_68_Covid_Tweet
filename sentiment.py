@@ -103,7 +103,7 @@ def app():
     color_dict = {'beta':'blue', 'delta':'orange', 'omicron':'green'}
     
     select_timeinterval = st.selectbox("time interval:", ['15 minutes', '30 minutes', '45 minutes', '1 hour', '2 hours'])
-    time_dict = {'15 minutes':'15min', '30 minutes':'30min', '45 minutes':'45min', '1 hour':'H', '2 hours':'2H'}
+    time_dict = {'15 minutes':'15min', '30 minutes':'30min', '45 minutes':'45min', '1 hour':'h', '2 hours':'2h'}
     
     tweets.loc[tweets['variant']==select_var].set_index('created_at')['sentiment_score'].resample(time_dict[select_timeinterval]).mean().plot(figsize = (10,4), color=color_dict[select_var])
     plt.title("Sentiment Scores on first 10 days " + select_var +  " Variant (Variant of Concern)")
