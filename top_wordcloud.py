@@ -7,6 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1Ynd3GOj1I6Vdot79UvTzrvFausmlxGIZ
 """
 
+import nltk
+
+nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('omw-1.4', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('stopwords')
+
 import matplotlib.pyplot as plt
 #from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
@@ -35,11 +44,11 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 #from textblob import TextBlob
 #from textblob import Word
 
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('omw-1.4')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('omw-1.4')
 
 
 # Word Cloud
